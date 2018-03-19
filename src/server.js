@@ -11,6 +11,6 @@ translate.translateText(text, targetLang, function (err, result) {
     next(err);
     return;
   }
-  console.log(result);
+  console.log('Resultado final',result);
 
 });

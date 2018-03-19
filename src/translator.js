@@ -12,7 +12,8 @@ TranslateService.translateText = function (content, targetLang, next) {
     translate
       .translate( content, targetLang )
       .then(results => {
-        return callback(null, results[0]);
+        console.log('Result',results);
+        return results[0];
       })
       .catch(err => {
         console.error('ERROR:', err);
